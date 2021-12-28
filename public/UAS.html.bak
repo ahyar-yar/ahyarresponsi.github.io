@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wisata Dompu</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <style>
+	 body{
+		width: 100%;
+		background: #fcfcfc;
+	} #tampil img{
+
+		display: inline-block;
+		margin-left: 5px;
+		height: 200px;
+		width: 200px;
+	} #tampil button{
+		border-radius: 30px;
+		height: 30px;
+		width: 100px;
+	}#tampil input{
+		margin-left: 20px;
+	}
+	.container{
+		width: 80%;
+		margin-left: 7%;
+		background-color: #ffff;
+		
+		
+	}.header{
+			height: 70px;
+			color: white;
+			margin-bottom: 15px;
+			background: green;
+			text-align:center;
+
+
+	}.header ul li{
+			list-style: none;
+			display: inline-block;
+			padding-top: 20px;
+			font-size: 25px;
+			text-shadow: 2px 1px 1px black;
+			margin-left: -40px;
+			
+	}#tes {
+			float: left;
+			font-size: 23px;
+			color: gold;
+			padding-top: 0px;
+			margin-left: 20px;
+	}#tes:hover { cursor: pointer;  }
+	.nav{
+			width: 100px;
+			height: 30px;
+			display: inline-block;
+			margin-left: 10px;
+			text-align: center;
+	}.nav hr{ 
+			height: 2px; background: #eaeaea;
+	}.nav:hover, button{  cursor: pointer; }
+	.nav button{
+		border: none; background-color: white;
+	}.footer{
+		width: 80%;
+		margin-left: 7%;
+		margin-top: -17px;
+		height: 70px;
+		background: green;
+		text-align: center;	
+	}
+	</style>
+	
+
+
+</head>
+<body >
+	<div class="container">
+		
+		<div class="header">
+			<ul>
+				<li id="tes"><img src="logo 2.png" width="70" height="70px;" ></li>
+				<li>Selamat Datang</li>
+			</ul>
+		</div>
+		
+	
+				<div class="nav">
+					<button onclick="showPage(1)"><h3 style="margin-bottom: 2px;" >Home</h3></button>
+					<hr>
+				</div>
+				<div class="nav">
+					<button  onclick="showPage(2)"><h3 style="margin-bottom: 2px;">Gallery</h3></button>
+					<hr>
+				</div>
+				<div class="nav">
+					<button  onclick="showPage(3)"><h3 style="margin-bottom: 2px;">Login</h3></button>
+					<hr>
+				</div>
+			
+				<div id="tampil" style="margin-left: 20px; margin-top: 20px; display: block;" ></div>
+			</div>
+	
+	<div class="footer" style="margin-top: 100px;">
+			<h3 style="padding-top: 25px; color: white; text-shadow: 2px 1px 1px black;">Copyright@ahyar</h3>
+	</div>
+
+
+	<script type="text/javascript">
+		function showPage(page){
+	var div = document.getElementById('tampil');
+	var isi = '';
+	if(page==1){
+		isi+='<h3 style="text-align:center;">WISATA KOTA DOMPU</h3>';
+		for(var a=0; a<1; a++){
+			isi+="<h5> Gunung Tambora  "+(a+1)+"  </h5>";
+			isi+='<p>Gunung Tambora menduduki peringkat pertama dari destinasi wisata populer dan eksotis di Dompu..</p>';
+			isi+='<p>Pemandangan alam yang tentunya eksotis karena dihamparkan dengan gunung-gunung membuat Gunung Tambora sangat populer di kalangan wisatawan. Jika kamu menanjaki posisi yang lebih tinggi dari kaki gunung ini, kamu benar-benar akan ditampakkan panorama alam ciptaan Tuhan yang tak ada duanya.</p>';
+			isi+='<p>Hamparan yang luas dan hijau, serta ada danau dan lautan yang tersembunyi di antara hamparan hijaunya.</p>';
+			isi+="<h5> Pantai Lakey  "+(a+2)+"  </h5>";
+			isi+='<p>Pantai keren yang turut menjadi hidden gems di Dompu ialah Pantai Lakey. Pantai Lakey adalah destinasi wisata di Dompu yang amat  populer di kalangan peselancar lokal sampai mancanegara. Bahkan pantai ini merupakan tanda keabsahan seorang peselancar telah berkunjung ke nusantara!</p>';
+			isi+='<p>Beberapa kali pantai dipakai menjadi lokasi lomba surfing tingkat internasional. Hal itu dikarenakan Pantai Lakey memenuhi indikator ideal untuk berselancar. Angin dan ombaknya yang stabil membuat peselancar ulung tidak menghentikan selancarnya! Lebih dari itu, pantai Lakey menawarkan panorama lautan luas yang amat mempesona.</p>';
+			isi+="<h5> Pulau Satonda  "+(a+3)+"  </h5>";
+			isi+='<p>Destinasi wisata Dompu berikutnya adalah Pulau Satonda. Pulau ini sudah cukup populer di kalangan masyarakat luar Nusa Tenggara maupun penduduk lokal. Saat berwisata ke wilayah Pesisir Satonda, wisatawan mampu melihat hamparan pasir & bahari sejauh mata memandang. Air bahari yang jernih pun akan sangat memanjakan wisatawan yang ingin snorkeling atau diving.</p>';
+			isi+='<p>Keindahan alam bawah laut dapat terlihat jelas, aneka macam jenis karang sampai hewan bahari misalnya, penyu sisik & ikan hias. Semakin ditelusuri, wisatawan akan menemukan sebuah danau yang tidak biasa. Dengan air danau yang asin dan sampai sekarang belum diketahui alasan mengapa air danau Satonda memiliki rasa berbeda dari danau pada umumnya. Namun, fenomena alam inilah yang menjadikan pulau Satonda sebagai destinasi wisata Dompu yang cukup unik dan memiliki ciri khasnya sendiri.</p>';
+			isi+="<h5> Nisa Pudu  "+(a+4)+"  </h5>";
+			isi+='<p>Nisa Pudu merupakan destinasi wisata yang membuat Kabupaten Dompu menjadi populer. Keunggulan yang paling sohor dari kawasan wisata ini panorama keindahan alam bawah laut yang eksotis.</p>';
+			isi+='<p>Sampai-sampai destinasi ini dijuluki dengan sebutan “Akuarium Dunia”. Selain karena penampakan alam lautnya yang memukau, spesies biota laut yang terdapat di wilayah ini juga sangat beragam. Sehingga tidak akan mengecewakan siapapun yang melakukan aktivitas diving atau snorkeling!</p>';
+		}
+		
+	}else if(page==2){
+			isi+='<center>';
+			isi+='<img src="ac.jpg"> <br>';
+			isi+='<img src="aj.jfif">';
+			isi+='<img src="al.jpg">';
+			isi+='<img src="ao.jpg">';
+			isi+='</center>';
+	} else{
+		isi+='<center>';
+		isi+='<label for="username">Username</label> : ';
+		isi+='<input type="text" id="username"  value="username"> <br><br>';
+		isi+='<label for="password">Password</label> :'
+		isi+='<input type="password" id="password" value="password"><br><br>';
+		isi+='<button >masuk</button>';
+		isi+='</center>'
+	}
+
+	div.innerHTML = isi;
+}
+	</script>
+</body>
+</html>
+
